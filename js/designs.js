@@ -4,9 +4,10 @@ const table = $('#pixel_canvas');
 const inputHeight = $('#input_height');
 const inputWidth = $('#input_width');
 
-/*Grid size input*/
-function makeGrid() {
 
+function makeGrid(x) {
+
+  /*Select size input*/
   const height = parseInt(inputHeight.val());
   const width = parseInt(inputWidth.val());
 
@@ -17,19 +18,22 @@ function makeGrid() {
     const tr = $('<tr></tr>');
 
     for (let col = 0; col < width; col++) {
-      tr.append(`<td></td>`);
+      tr.append('<td></td>');
     }
     table.append(tr);
   }
 }
 $('#submitBtn').on('click', makeGrid);
 
-$('table').on('mousedown', 'td', function paint() {
+/* Painting */
+$('table').on('mousedown', 'td', function() {
   var color;
   color = $('#colorPicker').val();
   $(this).attr("bgcolor", color);
+
+  /* Remove color doubleClick*/
   $(this).dblclick(function() {
     $(this).removeAttr('bgcolor');
-
   });
+
 });
