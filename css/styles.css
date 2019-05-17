@@ -185,4 +185,12 @@ td {
     h2 {
         font-size: 1rem;
     }
+    
+    tr {
+        height: 30px;
+    }
+
+    td {
+        width: 30px;
+    }
 }
