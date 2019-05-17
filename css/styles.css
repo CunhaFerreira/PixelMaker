@@ -173,7 +173,13 @@ td {
     h2 {
         font-size: 1.3rem;
     }
+    tr {
+        height: 30px;
+    }
 
+    td {
+        width: 30px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -184,13 +190,5 @@ td {
 
     h2 {
         font-size: 1rem;
-    }
-    
-    tr {
-        height: 30px;
-    }
-
-    td {
-        width: 30px;
     }
 }
