@@ -1,4 +1,4 @@
-# Play [Pixel Art Maker](https://cunhaferreira.github.io/PixelMaker/)
+# Enjoy >>> [Pixel Art Maker](https://cunhaferreira.github.io/PixelMaker/)
 
 * This is a simple editor to help you create a fantastic Pixel Art. 
 
